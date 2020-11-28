@@ -1,0 +1,191 @@
+$bodyFont: "Open Sans", sans-serif;
+$colorGreen: #1e5e68;
+$colorWhite: #f6f6f6;
+$fontSize: 13px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $bodyFont;
+  font-size: $fontSize;
+  background: $colorWhite;
+  line-height: 1.6;
+}
+header {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: $colorGreen;
+  color: $colorWhite;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  position: fixed;
+  width: 100%;
+  .logo {
+    .logo-ico {
+      color: $colorWhite;
+      margin: 10px;
+      float: left;
+    }
+    .logo-text {
+      margin: 15px;
+    }
+  }
+  .navigation {
+    a {
+      color: $colorWhite;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  input {
+    width: 100px;
+    height: 30px;
+    background-color: $colorGreen;
+    color: $colorWhite;
+  }
+}
+.first-section {
+  .headline {
+    margin: 30px;
+    padding-top: 150px;
+    text-align: center;
+    color: $colorGreen;
+    font-size: 45px;
+  }
+  .first-section-content {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    .paragraph {
+      padding: 20px;
+      width: 500px;
+      .paragraph-headline {
+        color: $colorGreen;
+        padding: 10px;
+      }
+    }
+    .first-paragraph-img {
+      width: 500px;
+    }
+  }
+}
+
+.second-section {
+  padding: 50px;
+  height: 500px;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(0, 176, 238, 0.9),
+      rgba(236, 226, 208, 0.99)
+    ),
+    url("images/img-bg-adventure.jpg");
+  clip-path: polygon(2% 18%, 100% 0%, 100% 84%, 0% 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  .section-headline {
+    text-align: center;
+    padding: 30px;
+    color: white;
+  }
+  .second-section-paragraph-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px 50px;
+    height: 900px;
+    text-align: center;
+  }
+  .second-section-paragraph {
+    background-color: white;
+    padding: 30px;
+    color: $colorGreen;
+    font-weight: bold;
+    height: 400px;
+  }
+}
+.third-section {
+  text-align: center;
+
+  .section-headline {
+    text-align: center;
+    color: $colorGreen;
+    margin: 20px;
+  }
+  .third-section-paragraph-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px 50px;
+    padding: 50px;
+    height: 650px;
+    background-color: white;
+
+    img {
+      width: 100%;
+    }
+    .third-section-headline {
+      padding: 20px;
+    }
+    li {
+      list-style: none;
+      padding: 10px;
+    }
+    #snow {
+      background-color: $colorGreen;
+      color: white;
+    }
+  }
+  .btn {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      256deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(26, 200, 214, 1) 0%,
+      rgba(31, 151, 175, 1) 20%
+    );
+  }
+}
+footer {
+  display: grid;
+  min-height: 250px;
+  grid-row: auto auto auto;
+  grid-gap: 1px 9px;
+  background-color: $colorGreen;
+  color: $colorWhite;
+  padding: 0 40px;
+  text-align: center;
+
+  a {
+    margin: 30px;
+    color: $colorWhite;
+    text-align: center;
+    padding: 50px;
+  }
+  .footer-border {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #1a4f5a;
+    width: 100%;
+    height: 80px;
+
+    .logo-ico {
+      color: $colorWhite;
+      margin: 10px;
+      float: left;
+    }
+    .logo-text {
+      margin: 15px;
+      float: left;
+    }
+  }
+}
+@media (max-width: 768px) {
+}

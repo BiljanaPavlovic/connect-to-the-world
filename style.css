@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  background: #f6f6f6;
+  line-height: 1.6;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: #1e5e68;
+  color: #f6f6f6;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  position: fixed;
+  width: 100%;
+}
+
+header .logo .logo-ico {
+  color: #f6f6f6;
+  margin: 10px;
+  float: left;
+}
+
+header .logo .logo-text {
+  margin: 15px;
+}
+
+header .navigation a {
+  color: #f6f6f6;
+  text-align: center;
+  padding: 20px;
+}
+
+header input {
+  width: 100px;
+  height: 30px;
+  background-color: #1e5e68;
+  color: #f6f6f6;
+}
+
+.first-section .headline {
+  margin: 30px;
+  padding-top: 150px;
+  text-align: center;
+  color: #1e5e68;
+  font-size: 45px;
+}
+
+.first-section .first-section-content {
+  margin: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+}
+
+.first-section .first-section-content .paragraph {
+  padding: 20px;
+  width: 500px;
+}
+
+.first-section .first-section-content .paragraph .paragraph-headline {
+  color: #1e5e68;
+  padding: 10px;
+}
+
+.first-section .first-section-content .first-paragraph-img {
+  width: 500px;
+}
+
+.second-section {
+  padding: 50px;
+  height: 500px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 176, 238, 0.9)), to(rgba(236, 226, 208, 0.99))), url("images/img-bg-adventure.jpg");
+  background-image: linear-gradient(rgba(0, 176, 238, 0.9), rgba(236, 226, 208, 0.99)), url("images/img-bg-adventure.jpg");
+  -webkit-clip-path: polygon(2% 18%, 100% 0%, 100% 84%, 0% 100%);
+          clip-path: polygon(2% 18%, 100% 0%, 100% 84%, 0% 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.second-section .section-headline {
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+.second-section .second-section-paragraph-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-gap: 10px 50px;
+  height: 900px;
+  text-align: center;
+}
+
+.second-section .second-section-paragraph {
+  background-color: white;
+  padding: 30px;
+  color: #1e5e68;
+  font-weight: bold;
+  height: 400px;
+}
+
+.third-section {
+  text-align: center;
+}
+
+.third-section .section-headline {
+  text-align: center;
+  color: #1e5e68;
+  margin: 20px;
+}
+
+.third-section .third-section-paragraph-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 10px 50px;
+  padding: 50px;
+  height: 650px;
+  background-color: white;
+}
+
+.third-section .third-section-paragraph-div img {
+  width: 100%;
+}
+
+.third-section .third-section-paragraph-div .third-section-headline {
+  padding: 20px;
+}
+
+.third-section .third-section-paragraph-div li {
+  list-style: none;
+  padding: 10px;
+}
+
+.third-section .third-section-paragraph-div #snow {
+  background-color: #1e5e68;
+  color: white;
+}
+
+.third-section .btn {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  background: white;
+  background: linear-gradient(256deg, white 0%, #1ac8d6 0%, #1f97af 20%);
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  min-height: 250px;
+  grid-row: auto auto auto;
+  grid-gap: 1px 9px;
+  background-color: #1e5e68;
+  color: #f6f6f6;
+  padding: 0 40px;
+  text-align: center;
+}
+
+footer a {
+  margin: 30px;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 50px;
+}
+
+footer .footer-border {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  background-color: #1a4f5a;
+  width: 100%;
+  height: 80px;
+}
+
+footer .footer-border .logo-ico {
+  color: #f6f6f6;
+  margin: 10px;
+  float: left;
+}
+
+footer .footer-border .logo-text {
+  margin: 15px;
+  float: left;
+}
+/*# sourceMappingURL=style.css.map */
