@@ -15,37 +15,46 @@ body {
 header {
   display: -ms-grid;
   display: grid;
-  min-height: 100px;
   grid-auto-flow: column;
   background-color: #1e5e68;
   color: #f6f6f6;
   grid-gap: 1.5em;
-  padding: 0 40px;
+  padding: 0 10px;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
 header .logo .logo-ico {
   color: #f6f6f6;
   margin: 10px;
+  padding: 20px;
   float: left;
+  fill: #f6f6f6;
 }
 
 header .logo .logo-text {
-  margin: 15px;
+  margin: 10px;
+  padding: 20px;
 }
 
-header .navigation a {
+header .navigation {
+  padding: 20px;
+}
+
+header .navigation .nav-link {
   color: #f6f6f6;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 header input {
   width: 100px;
   height: 30px;
+  margin: 30px;
   background-color: #1e5e68;
-  color: #f6f6f6;
 }
 
 .first-section .headline {
@@ -81,20 +90,24 @@ header input {
 
 .second-section {
   padding: 50px;
-  height: 500px;
+  height: 850px;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 176, 238, 0.9)), to(rgba(236, 226, 208, 0.99))), url("images/img-bg-adventure.jpg");
   background-image: linear-gradient(rgba(0, 176, 238, 0.9), rgba(236, 226, 208, 0.99)), url("images/img-bg-adventure.jpg");
-  -webkit-clip-path: polygon(2% 18%, 100% 0%, 100% 84%, 0% 100%);
-          clip-path: polygon(2% 18%, 100% 0%, 100% 84%, 0% 100%);
+  -webkit-clip-path: polygon(0 18%, 100% 0%, 100% 76%, 0% 100%);
+          clip-path: polygon(0 18%, 100% 0%, 100% 76%, 0% 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
 
+.second-section .paragraph-ico {
+  padding: 10px;
+}
+
 .second-section .section-headline {
   text-align: center;
-  padding: 30px;
+  padding: 100px;
   color: white;
 }
 
@@ -103,8 +116,7 @@ header input {
   display: grid;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
-  grid-gap: 10px 50px;
-  height: 900px;
+  grid-gap: 0px 50px;
   text-align: center;
 }
 
@@ -113,7 +125,6 @@ header input {
   padding: 30px;
   color: #1e5e68;
   font-weight: bold;
-  height: 400px;
 }
 
 .third-section {
@@ -123,7 +134,7 @@ header input {
 .third-section .section-headline {
   text-align: center;
   color: #1e5e68;
-  margin: 20px;
+  padding: 50px;
 }
 
 .third-section .third-section-paragraph-div {
@@ -134,7 +145,6 @@ header input {
   grid-gap: 10px 50px;
   padding: 50px;
   height: 650px;
-  background-color: white;
 }
 
 .third-section .third-section-paragraph-div img {
@@ -153,12 +163,20 @@ header input {
 .third-section .third-section-paragraph-div #snow {
   background-color: #1e5e68;
   color: white;
+  border: solid 3px whitesmoke;
+}
+
+.third-section .third-section-paragraph-div .white {
+  background-color: white;
+  border: solid 3px whitesmoke;
 }
 
 .third-section .btn {
   margin: 20px;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
+  font-weight: bold;
+  color: #f6f6f6;
   border-radius: 20px;
   background: white;
   background: linear-gradient(256deg, white 0%, #1ac8d6 0%, #1f97af 20%);
@@ -167,12 +185,12 @@ header input {
 footer {
   display: -ms-grid;
   display: grid;
-  min-height: 250px;
-  grid-row: auto auto auto;
+  min-height: 200px;
+  grid-row: auto auto;
   grid-gap: 1px 9px;
   background-color: #1e5e68;
   color: #f6f6f6;
-  padding: 0 40px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -180,27 +198,35 @@ footer a {
   margin: 30px;
   color: #f6f6f6;
   text-align: center;
-  padding: 50px;
+  font-size: 15px;
+  text-decoration: none;
 }
 
-footer .footer-border {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+footer .soc-ico {
+  background-color: #54c1e3;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.footer-border {
   background-color: #1a4f5a;
+  color: #f6f6f6;
   width: 100%;
-  height: 80px;
+  height: 50px;
 }
 
-footer .footer-border .logo-ico {
+.footer-border .logo-ico {
   color: #f6f6f6;
   margin: 10px;
   float: left;
 }
 
-footer .footer-border .logo-text {
+.footer-border .logo-text {
   margin: 15px;
   float: left;
+}
+
+.footer-border .footer {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,36 +15,43 @@ body {
 }
 header {
   display: grid;
-  min-height: 100px;
   grid-auto-flow: column;
   background-color: $colorGreen;
   color: $colorWhite;
   grid-gap: 1.5em;
-  padding: 0 40px;
+  padding: 0 10px;
   position: fixed;
+  top: 0;
+
   width: 100%;
   .logo {
     .logo-ico {
       color: $colorWhite;
       margin: 10px;
+      padding: 20px;
       float: left;
+      fill: $colorWhite;
     }
     .logo-text {
-      margin: 15px;
+      margin: 10px;
+      padding: 20px;
     }
   }
   .navigation {
-    a {
+    padding: 20px;
+    .nav-link {
       color: $colorWhite;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
+      font-size: 15px;
+      text-decoration: none;
     }
   }
   input {
     width: 100px;
     height: 30px;
+    margin: 30px;
     background-color: $colorGreen;
-    color: $colorWhite;
   }
 }
 .first-section {
@@ -76,28 +83,29 @@ header {
 
 .second-section {
   padding: 50px;
-  height: 500px;
+  height: 850px;
   text-align: center;
   background-image: linear-gradient(
       rgba(0, 176, 238, 0.9),
       rgba(236, 226, 208, 0.99)
     ),
     url("images/img-bg-adventure.jpg");
-  clip-path: polygon(2% 18%, 100% 0%, 100% 84%, 0% 100%);
+  clip-path: polygon(0 18%, 100% 0%, 100% 76%, 0% 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-
+  .paragraph-ico {
+    padding: 10px;
+  }
   .section-headline {
     text-align: center;
-    padding: 30px;
+    padding: 100px;
     color: white;
   }
   .second-section-paragraph-div {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 10px 50px;
-    height: 900px;
+    grid-gap: 0px 50px;
     text-align: center;
   }
   .second-section-paragraph {
@@ -105,7 +113,6 @@ header {
     padding: 30px;
     color: $colorGreen;
     font-weight: bold;
-    height: 400px;
   }
 }
 .third-section {
@@ -114,7 +121,8 @@ header {
   .section-headline {
     text-align: center;
     color: $colorGreen;
-    margin: 20px;
+
+    padding: 50px;
   }
   .third-section-paragraph-div {
     display: grid;
@@ -122,7 +130,6 @@ header {
     grid-gap: 10px 50px;
     padding: 50px;
     height: 650px;
-    background-color: white;
 
     img {
       width: 100%;
@@ -137,12 +144,19 @@ header {
     #snow {
       background-color: $colorGreen;
       color: white;
+      border: solid 3px whitesmoke;
+    }
+    .white {
+      background-color: white;
+      border: solid 3px whitesmoke;
     }
   }
   .btn {
     margin: 20px;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+    font-weight: bold;
+    color: $colorWhite;
     border-radius: 20px;
     background: rgb(255, 255, 255);
     background: linear-gradient(
@@ -155,36 +169,44 @@ header {
 }
 footer {
   display: grid;
-  min-height: 250px;
-  grid-row: auto auto auto;
+  min-height: 200px;
+  grid-row: auto auto;
   grid-gap: 1px 9px;
   background-color: $colorGreen;
   color: $colorWhite;
-  padding: 0 40px;
+  padding: 40px 20px;
   text-align: center;
 
   a {
     margin: 30px;
     color: $colorWhite;
     text-align: center;
-    padding: 50px;
+    font-size: 15px;
+    text-decoration: none;
   }
-  .footer-border {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: #1a4f5a;
-    width: 100%;
-    height: 80px;
+  .soc-ico {
+    background-color: #54c1e3;
+    border-radius: 50%;
+    padding: 5px;
+  }
+}
+.footer-border {
+  background-color: #1a4f5a;
+  color: $colorWhite;
+  width: 100%;
+  height: 50px;
 
-    .logo-ico {
-      color: $colorWhite;
-      margin: 10px;
-      float: left;
-    }
-    .logo-text {
-      margin: 15px;
-      float: left;
-    }
+  .logo-ico {
+    color: $colorWhite;
+    margin: 10px;
+    float: left;
+  }
+  .logo-text {
+    margin: 15px;
+    float: left;
+  }
+  .footer {
+    text-align: right;
   }
 }
 @media (max-width: 768px) {
