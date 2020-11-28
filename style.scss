@@ -141,6 +141,15 @@ header {
       list-style: none;
       padding: 10px;
     }
+    li::after {
+      display: block;
+      content: "";
+
+      height: 1px;
+      background: $colorWhite;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
     #snow {
       background-color: $colorGreen;
       color: white;

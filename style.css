@@ -160,6 +160,15 @@ header input {
   padding: 10px;
 }
 
+.third-section .third-section-paragraph-div li::after {
+  display: block;
+  content: "";
+  height: 1px;
+  background: #f6f6f6;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .third-section .third-section-paragraph-div #snow {
   background-color: #1e5e68;
   color: white;
